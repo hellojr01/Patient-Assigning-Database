@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="1280.0" style="-fx-background-color: #1688a4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="25.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToHomePage" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Login/Homepage-houseicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcd3e8db" height="609.0" layoutX="273.0" layoutY="15.0" stroke="WHITE" strokeType="INSIDE" width="730.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1697b6" height="642.0" layoutX="-2.0" layoutY="-2.0" opacity="0.18" stroke="WHITE" strokeType="INSIDE" width="1286.0" />
+            <Label layoutX="493.0" layoutY="21.0" text="Patient Information">
+               <font>
+                  <Font name="Britannic Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="109.0" fitWidth="112.0" layoutX="294.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/patientInfo/sampleProfilePic.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/patientInfo/backIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <GridPane layoutX="441.0" layoutY="85.0" prefHeight="491.0" prefWidth="487.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="199.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.4000244140625" minWidth="10.0" prefWidth="20.39995117187499" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.800048828125" minWidth="10.0" prefWidth="266.800048828125" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="134.79999389648438" minHeight="0.0" prefHeight="35.8" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="327.99998168945314" minHeight="10.0" prefHeight="29.400000000000006" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="351.20000610351565" minHeight="10.0" prefHeight="35.00000610351563" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="351.20000610351565" minHeight="10.0" prefHeight="99.6000183105469" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="351.20000610351565" minHeight="10.0" prefHeight="54.79997558593749" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.99998168945314" minHeight="9.800006103515614" prefHeight="56.79997558593749" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.99998168945314" minHeight="0.0" prefHeight="43.20002441406251" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.99998168945314" minHeight="10.0" prefHeight="43.99995117187501" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.99998168945314" minHeight="10.0" prefHeight="48.80003662109374" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.99998168945314" minHeight="10.0" prefHeight="43.20004882812498" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Name">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Name">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="NRIC Number" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Address" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="State" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Poscode" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Name">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="City" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Date of Birth" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Height(cm)" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Weight(kg)" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Gender" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

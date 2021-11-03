@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="1280.0" style="-fx-background-color: #1688a4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="25.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToHomePage" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Login/Homepage-houseicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="1222.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Login/Homepage-profileicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="patientInfo" layoutX="272.0" layoutY="147.0" mnemonicParsing="false" prefHeight="347.0" prefWidth="303.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="290.0" fitWidth="282.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/doctorView/patientIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="707.0" layoutY="178.0" mnemonicParsing="false" onAction="#switchToMedicRecord" prefHeight="312.0" prefWidth="331.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="260.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/doctorView/recordIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="315.0" layoutY="467.0" text="Patient Information">
+               <font>
+                  <Font name="Britannic Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="788.0" layoutY="467.0" text="Medical Record">
+               <font>
+                  <Font name="Britannic Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
