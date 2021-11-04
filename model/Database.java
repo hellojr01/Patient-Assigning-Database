@@ -16,13 +16,13 @@ import java.io.FileReader;
 
 public class Database{
   public static void writeData(String tableName, List<String> Entry){
-    String fileName = tableName + ".csv";
+    String fileName = tableName + ".txt";
     String filePath = "./Database/"+fileName;
     File csvFile = new File(filePath);
     if (csvFile.isFile()) {
         try{
             FileWriter pw = new FileWriter(filePath,true);
-            System.out.println("Writing " + fileName);
+            //System.out.println("Writing " + fileName);
             for(int i = 0; i < Entry.size(); i++){
                   pw.append(Entry.get(i));
                   if(i == Entry.size() - 1){
