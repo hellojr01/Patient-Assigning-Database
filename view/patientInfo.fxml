@@ -20,8 +20,8 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcd3e8db" height="609.0" layoutX="273.0" layoutY="15.0" stroke="WHITE" strokeType="INSIDE" width="730.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1697b6" height="642.0" layoutX="-2.0" layoutY="-2.0" opacity="0.18" stroke="WHITE" strokeType="INSIDE" width="1286.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcd3e8db" height="608.0" layoutX="273.0" layoutY="16.0" stroke="WHITE" strokeType="INSIDE" width="730.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1697b6" height="631.0" layoutX="-2.0" layoutY="-2.0" opacity="0.18" stroke="WHITE" strokeType="INSIDE" width="1286.0" />
             <Label layoutX="493.0" layoutY="21.0" text="Patient Information">
                <font>
                   <Font name="Britannic Bold" size="34.0" />
@@ -188,8 +188,27 @@
                         <Font name="Arial" size="14.0" />
                      </font>
                   </Label>
+                  <Label fx:id="name" text="Label" GridPane.columnIndex="2" />
+                  <Label fx:id="icNumber" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label fx:id="gender" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label fx:id="weight" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Label fx:id="height" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Label fx:id="dob" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Label fx:id="city" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Label fx:id="poscode" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label fx:id="state" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label fx:id="address" prefHeight="93.0" prefWidth="265.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                </children>
             </GridPane>
+            <Button layoutX="1003.0" layoutY="16.0" mnemonicParsing="false" onAction="#refreshInfo" prefHeight="31.0" prefWidth="34.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/patientInfo/refreshIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
    </center>

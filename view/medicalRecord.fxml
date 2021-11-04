@@ -26,7 +26,7 @@
                   <Font name="Britannic Bold" size="30.0" />
                </font>
             </Label>
-            <ComboBox layoutX="861.0" layoutY="74.0" prefWidth="150.0" promptText="Sort by year" style="-fx-background-color: white;">
+            <ComboBox fx:id="yearComboBox" layoutX="861.0" layoutY="74.0" prefWidth="150.0" promptText="Sort by year" style="-fx-background-color: white;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ComboBox>
@@ -136,7 +136,7 @@
                   </Button>
                </children>
             </GridPane>
-            <Label layoutX="342.0" layoutY="72.0" text="Year">
+            <Label fx:id="year" layoutX="342.0" layoutY="72.0" text="Year">
                <font>
                   <Font size="20.0" />
                </font>
