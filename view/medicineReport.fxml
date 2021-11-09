@@ -18,7 +18,7 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1697b6" height="631.0" layoutX="-2.0" layoutY="-2.0" opacity="0.18" stroke="WHITE" strokeType="INSIDE" width="1286.0" />
-            <Button layoutX="23.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToDoctorView" style="-fx-background-color: transparent;">
+            <Button layoutX="23.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToMedicineList" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -82,7 +82,7 @@
             </Label>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="33.0" layoutX="460.0" layoutY="361.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="315.0" />
             <Label layoutX="470.0" layoutY="364.0" prefHeight="26.0" prefWidth="282.0" text="Yes/No" />
-            <Button layoutX="1156.0" layoutY="70.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #1688a4;" text="Check out" textFill="WHITE">
+            <Button layoutX="1156.0" layoutY="70.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #1688a4;" text="Check out" textFill="WHITE">
                <font>
                   <Font name="Cooper Black" size="13.0" />
                </font>

@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.patientInfoController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.medicineListController">
    <top>
       <AnchorPane prefHeight="80.0" prefWidth="1280.0" style="-fx-background-color: #1688a4;" BorderPane.alignment="CENTER" />
    </top>
@@ -22,18 +22,6 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1697b6" height="631.0" layoutX="-2.0" layoutY="-2.0" opacity="0.18" stroke="WHITE" strokeType="INSIDE" width="1286.0" />
-            <Button layoutX="23.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToDoctorView" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/patientInfo/backIcon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="531.0" layoutX="285.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="480.0" />
             <Label layoutX="306.0" layoutY="190.0" text="Name:">
                <font>
@@ -52,7 +40,7 @@
             </Label>
             <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="302.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Portal/view/image/staffNurseView/hospitalIcon.png" />
+                  <Image url="@image/staffNurseView/hospitalIcon.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="73.0" fitWidth="80.0" layoutX="684.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
@@ -70,7 +58,7 @@
             </Label>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="409.0" layoutY="235.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="322.0" />
             <Label layoutX="417.0" layoutY="238.0" prefHeight="26.0" prefWidth="306.0" text="Yes/No" />
-            <Label layoutX="419.0" layoutY="305.0" prefHeight="222.0" prefWidth="305.0">
+            <Label fx:id="diagnosisText" layoutX="419.0" layoutY="305.0" prefHeight="222.0" prefWidth="305.0">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
@@ -80,7 +68,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="1216.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToDoctorView" style="-fx-background-color: transparent;">
+            <Button layoutX="1216.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToMedicineReport" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -102,7 +90,7 @@
             </Button>
             <AnchorPane layoutX="839.0" layoutY="115.0" prefHeight="486.0" prefWidth="402.0" style="-fx-background-color: white;">
                <children>
-                  <TextField layoutX="196.0" layoutY="19.0" prefHeight="26.0" prefWidth="156.0" promptText="Medicine Name" />
+                  <TextField fx:id="medicineName" layoutX="196.0" layoutY="19.0" prefHeight="26.0" prefWidth="156.0" promptText="Medicine Name" />
                   <Button layoutX="353.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
@@ -129,7 +117,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -138,7 +126,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="7">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -147,7 +135,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -156,7 +144,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -165,7 +153,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -174,7 +162,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -183,7 +171,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -192,7 +180,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>

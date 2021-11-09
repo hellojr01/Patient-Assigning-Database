@@ -20,7 +20,7 @@ public class LoginPageController {
     Stage primaryStage;
     Parent root;
     
-    ObservableList<String> roleList = FXCollections.observableArrayList("Doctor","Nurse");
+    ObservableList<String> roleList = FXCollections.observableArrayList("Doctor","Nurse","Pharmacist");
 
     @FXML
     private TextField userInput_ID;
@@ -53,8 +53,12 @@ public class LoginPageController {
                 loadFXML("/view/doctorView.fxml",event);
                 flag = true;
         }
-        else{
+        else if (roleComboBox.getValue().toString().equals("Nurse")){
             loadFXML("/view/staffNurseView.fxml",event);
+            flag = true;
+        }
+        else{
+            loadFXML("/view/medicineList.fxml",event);
             flag = true;
         }
             }
