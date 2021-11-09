@@ -24,7 +24,7 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="272.0" layoutY="147.0" mnemonicParsing="false" onAction="#switchToPatientInfo" prefHeight="347.0" prefWidth="303.0" style="-fx-background-color: transparent;">
+            <Button layoutX="176.0" layoutY="149.0" mnemonicParsing="false" onAction="#switchToPatientInfo" prefHeight="342.0" prefWidth="245.0" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="290.0" fitWidth="282.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -36,7 +36,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="707.0" layoutY="178.0" mnemonicParsing="false" onAction="#switchToMedicRecord" prefHeight="312.0" prefWidth="331.0" style="-fx-background-color: transparent;">
+            <Button layoutX="512.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchToMedicRecord" prefHeight="312.0" prefWidth="331.0" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="260.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -48,12 +48,29 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label layoutX="315.0" layoutY="467.0" text="Patient Information">
+            <Label layoutX="219.0" layoutY="464.0" text="Patient Information">
                <font>
                   <Font name="Britannic Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="788.0" layoutY="467.0" text="Medical Record">
+            <Label layoutX="593.0" layoutY="464.0" text="Medical Record">
+               <font>
+                  <Font name="Britannic Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="858.0" layoutY="172.0" mnemonicParsing="false" onAction="#switchToMedicRecord" prefHeight="318.0" prefWidth="318.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="227.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/doctorView/medicalDiagnosisIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="926.0" layoutY="464.0" text="Patient Diagnosis">
                <font>
                   <Font name="Britannic Bold" size="25.0" />
                </font>
