@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.patientInfoController">
    <top>
@@ -199,6 +200,20 @@
                   <Label fx:id="state" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                   <Label fx:id="address" prefHeight="93.0" prefWidth="265.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                </children>
+               <fx:define>
+                  <ArrayList fx:id="info_list">
+                        <fx:reference source="name" />
+                        <fx:reference source="icNumber" />
+                        <fx:reference source="gender" />
+                        <fx:reference source="weight" />
+                        <fx:reference source="height" />
+                        <fx:reference source="dob" />
+                        <fx:reference source="city" />
+                        <fx:reference source="poscode" />
+                        <fx:reference source="state" />
+                        <fx:reference source="address" />
+                  </ArrayList>
+               </fx:define>
             </GridPane>
             <Button layoutX="1003.0" layoutY="16.0" mnemonicParsing="false" onAction="#refreshInfo" prefHeight="31.0" prefWidth="34.0" style="-fx-background-color: transparent;">
                <graphic>

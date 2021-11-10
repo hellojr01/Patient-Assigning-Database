@@ -29,6 +29,11 @@ public class doctorViewController {
         loadFXML("/view/patientInfo.fxml", event);
     }
 
+    @FXML
+    void switchToPatientDiagnosis(ActionEvent event) throws IOException {
+        loadFXML("/view/patientDiagnosisView.fxml", event);
+    }
+
     private void loadFXML(String fxmlPath,ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource(fxmlPath));
         primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();

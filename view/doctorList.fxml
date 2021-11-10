@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.doctorListController">
    <top>
@@ -93,16 +94,16 @@
                         <Insets left="65.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <Button fx:id="name1" mnemonicParsing="false" prefHeight="24.0" prefWidth="266.0" text="Name" GridPane.rowIndex="1">
+                  <Button fx:id="name1" mnemonicParsing="false" prefHeight="26.0" prefWidth="269.0" text="Kumar Hari Rajah" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="name2" mnemonicParsing="false" prefHeight="19.0" prefWidth="271.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button fx:id="name4" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Name" GridPane.rowIndex="3" />
-                  <Button fx:id="name5" mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Button fx:id="name3" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <Button fx:id="name6" mnemonicParsing="false" prefHeight="27.0" prefWidth="271.0" text="Name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button fx:id="name2" mnemonicParsing="false" prefHeight="19.0" prefWidth="271.0" text="Mohd Zailani Mat Hassan" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="name4" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Aryani Abdullah" GridPane.rowIndex="3" />
+                  <Button fx:id="name5" mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" text="Junaidah Saidin" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="name3" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Yee Siang Shew" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="name6" mnemonicParsing="false" prefHeight="27.0" prefWidth="271.0" text="Tan Chin Yew" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                </children>
             </GridPane>
             <Button layoutX="27.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchBack" style="-fx-background-color: transparent;">

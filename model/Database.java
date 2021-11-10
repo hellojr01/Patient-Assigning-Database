@@ -156,4 +156,27 @@ public class Database{
     }
     return table;
   }
+
+  public static List<List<String>> readTextData(String tableName){
+    String fileName = tableName + ".txt";
+    String filePath = "./Database/"+fileName;
+    File csvFile = new File(filePath);
+    List<List<String>> table = new ArrayList<List<String>>();
+    if (csvFile.isFile()) {
+        try{
+            String row = null;
+            BufferedReader csvReader = new BufferedReader(new FileReader(filePath));
+            while ((row = csvReader.readLine()) != null) {
+                String[] data = row.split(",");
+                List<String> temp = Arrays.asList(data);
+                table.add(temp);
+            }
+            csvReader.close();
+        }
+        catch(Exception e){
+          e.printStackTrace();
+        }
+    }
+    return table;
+  }
 }

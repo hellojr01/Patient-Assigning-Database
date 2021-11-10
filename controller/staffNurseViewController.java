@@ -19,6 +19,12 @@ public class staffNurseViewController {
     List<String> reason = new ArrayList<>();
 
     @FXML
+    private Label address;
+
+    @FXML
+    private Label patientName;
+
+    @FXML
     private TextField reasonField;
     
     @FXML
@@ -30,6 +36,13 @@ public class staffNurseViewController {
     void saveReason(ActionEvent event){
         reason.add(reasonField.getText());
         Database.writeData("Patient_reason",reason);
+    }
+
+    @FXML
+    void refreshInfo(ActionEvent event) {
+        List<List<String>> patient_info = Database.readData("Patient");
+        patientName.setText(patient_info.get(0).get(0));
+        address.setText(patient_info.get(0).get(9) + "," + patient_info.get(0).get(7) + " " + patient_info.get(0).get(6) + "," + patient_info.get(0).get(8));
     }
 
     private void loadFXML(String fxmlPath,ActionEvent event) throws IOException {

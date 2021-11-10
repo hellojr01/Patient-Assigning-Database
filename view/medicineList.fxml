@@ -50,24 +50,19 @@
             </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="39.0" layoutX="409.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="321.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="254.0" layoutX="410.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="324.0" />
-            <Label layoutX="418.0" layoutY="188.0" prefHeight="30.0" prefWidth="303.0" text="Patient name" />
+            <Label fx:id="name" layoutX="418.0" layoutY="188.0" prefHeight="30.0" prefWidth="303.0" text="Patient name" />
             <Label layoutX="307.0" layoutY="240.0" text="Allergies:">
                <font>
                   <Font name="Britannic Bold" size="20.0" />
                </font>
             </Label>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="409.0" layoutY="235.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="322.0" />
-            <Label layoutX="417.0" layoutY="238.0" prefHeight="26.0" prefWidth="306.0" text="Yes/No" />
+            <Label layoutX="417.0" layoutY="238.0" prefHeight="26.0" prefWidth="306.0" text="No" />
             <Label fx:id="diagnosisText" layoutX="419.0" layoutY="305.0" prefHeight="222.0" prefWidth="305.0">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="1216.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToDoctorView" prefHeight="41.0" prefWidth="0.0" style="-fx-background-color: transparent;">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
             <Button layoutX="1216.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToMedicineReport" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
@@ -99,6 +94,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children></AnchorPane>
             <GridPane layoutX="864.0" layoutY="160.0" prefHeight="426.0" prefWidth="362.0">
@@ -125,6 +123,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="7">
                      <graphic>
@@ -134,6 +135,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <graphic>
@@ -143,6 +147,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <graphic>
@@ -152,6 +159,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <graphic>
@@ -161,6 +171,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <graphic>
@@ -170,6 +183,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <graphic>
@@ -179,6 +195,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <graphic>
@@ -188,15 +207,18 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <Label text="Label" />
-                  <Label text="Label" GridPane.rowIndex="7" />
-                  <Label text="Label" GridPane.rowIndex="6" />
-                  <Label text="Label" GridPane.rowIndex="5" />
-                  <Label text="Label" GridPane.rowIndex="4" />
-                  <Label text="Label" GridPane.rowIndex="3" />
-                  <Label text="Label" GridPane.rowIndex="2" />
-                  <Label text="Label" GridPane.rowIndex="1" />
+                  <Label text="Medicine" />
+                  <Label text="Medicine" GridPane.rowIndex="7" />
+                  <Label text="Medicine" GridPane.rowIndex="6" />
+                  <Label text="Medicine" GridPane.rowIndex="5" />
+                  <Label text="Medicine" GridPane.rowIndex="4" />
+                  <Label text="Medicine" GridPane.rowIndex="3" />
+                  <Label text="Medicine" GridPane.rowIndex="2" />
+                  <Label text="Medicine" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <Label layoutX="839.0" layoutY="86.0" text="Medicine List">
@@ -204,6 +226,15 @@
                   <Font name="Arial Black" size="15.0" />
                </font>
             </Label>
+            <Button layoutX="765.0" layoutY="73.0" mnemonicParsing="false" onAction="#refreshInfo" prefHeight="31.0" prefWidth="34.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/patientInfo/refreshIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
    </center>

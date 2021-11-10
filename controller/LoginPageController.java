@@ -58,6 +58,7 @@ public class LoginPageController {
             flag = true;
         }
         else{
+            System.out.println("Pharmacist");
             loadFXML("/view/medicineList.fxml",event);
             flag = true;
         }

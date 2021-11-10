@@ -1,21 +1,31 @@
 package controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import java.io.IOException;
+import javafx.scene.Parent;
 
 public class medicineReportController {
-
+    
+    Stage primaryStage;
+    Parent root;
+    
     @FXML
     void refreshInfo(ActionEvent event) {
-
+        
     }
 
     @FXML
-    void switchToLogin(ActionEvent event) {
+    void switchToLogin(ActionEvent event) throws IOException {
         loadFXML("/view/login.fxml", event);
     }
 
     @FXML
-    void switchToMedicineList(ActionEvent event) {
+    void switchToMedicineList(ActionEvent event) throws IOException {
         loadFXML("/view/medicineList.fxml", event);
     }
 

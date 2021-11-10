@@ -62,8 +62,9 @@ public class patientInfoController {
     @FXML
     void refreshInfo(ActionEvent event){
         List<List<String>> patient_info = Database.readData("Patient");
-        for (int i = 0; i < patient_info.size(); i++){
-            info_list.get(i).setText(patient_info.get(i).get(i));
+        for (int i = 0; i < info_list.size(); i++){
+            //System.out.println(patient_info.get(0).get(i));
+            info_list.get(i).setText(patient_info.get(0).get(i));
         }
 
     }
@@ -75,5 +76,4 @@ public class patientInfoController {
         primaryStage.setScene(new Scene(root, 1280, 720));
         primaryStage.show();
     }
-
 }

@@ -5,8 +5,6 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import model.GlobalState;
-
 public class Main extends Application{
   @Override
   public void start(Stage primaryStage) throws Exception{

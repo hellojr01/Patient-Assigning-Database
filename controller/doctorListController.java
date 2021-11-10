@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 import javafx.scene.Scene;
 import javafx.scene.Node;
+import java.util.*;
 
 public class doctorListController {
     
@@ -34,6 +35,9 @@ public class doctorListController {
     private Button name6;
 
     @FXML
+    private ArrayList<Button> name_list;
+
+    @FXML
     void switchBack(ActionEvent event) throws IOException {
         loadFXML("/view/adminView.fxml", event);
     }
@@ -41,11 +45,6 @@ public class doctorListController {
     @FXML
     void switchToLogin(ActionEvent event) throws IOException {
         loadFXML("/view/login.fxml", event);
-    }
-
-    @FXML
-    void switchToProfile(ActionEvent event) {
-
     }
 
     private void loadFXML(String fxmlPath,ActionEvent event) throws IOException {
