@@ -97,7 +97,7 @@
                         <Insets left="65.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <Button fx:id="name1" mnemonicParsing="false" prefHeight="24.0" prefWidth="266.0" text="Name" GridPane.rowIndex="1">
+                  <Button fx:id="name1" mnemonicParsing="false" prefHeight="24.0" prefWidth="266.0" text="Raja Kumar" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -105,23 +105,23 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="name2" mnemonicParsing="false" prefHeight="19.0" prefWidth="271.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button fx:id="name2" mnemonicParsing="false" prefHeight="19.0" prefWidth="271.0" text="Mohd Zaina Hussein" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button fx:id="name4" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Name" GridPane.rowIndex="3">
+                  <Button fx:id="name4" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Juhaida Abdullah" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button fx:id="name5" mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <Button fx:id="name5" mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" text="Hidayah Mansoh" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button fx:id="name3" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Name" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <Button fx:id="name3" mnemonicParsing="false" prefHeight="24.0" prefWidth="271.0" text="Ong Kar Hong" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button fx:id="name6" mnemonicParsing="false" prefHeight="27.0" prefWidth="271.0" text="Name" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <Button fx:id="name6" mnemonicParsing="false" prefHeight="27.0" prefWidth="271.0" text="Lim Sze Yan" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>

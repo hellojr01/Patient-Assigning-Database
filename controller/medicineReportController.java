@@ -10,6 +10,7 @@ import java.util.List;
 import java.io.IOException;
 import javafx.scene.Parent;
 import model.Database;
+import java.io.*;
 import javafx.scene.control.Label;
 
 public class medicineReportController {
@@ -25,6 +26,9 @@ public class medicineReportController {
 
     @FXML
     private Label name;
+
+    @FXML
+    private Label medicineList;
     
     @FXML
     void refreshInfo(ActionEvent event) {
@@ -32,6 +36,25 @@ public class medicineReportController {
         name.setText(patient_info.get(0).get(0));
         address.setText(patient_info.get(0).get(9) + "," + patient_info.get(0).get(7) + " " + patient_info.get(0).get(6) + "," + patient_info.get(0).get(8));
         dob.setText(patient_info.get(0).get(5));
+
+        try{  
+            File file=new File("./Database/MedicineList.txt");    //creates a new file instance  
+            FileReader fr=new FileReader(file);   //reads the file  
+            BufferedReader br=new BufferedReader(fr);  //creates a buffering character input stream  
+            StringBuffer sb=new StringBuffer();    //constructs a string buffer with no characters  
+            String line;  
+            while((line=br.readLine())!=null)  
+            {  
+                sb.append(line);      //appends line to string buffer  
+                sb.append("\n");     //line feed   
+            }  
+            fr.close();    //closes the stream and release the resources   
+            medicineList.setText(sb.toString());   //returns a string that textually represents the object  
+            }  
+            catch(IOException e)  
+            {  
+                e.printStackTrace();  
+            }   
     }
 
     @FXML

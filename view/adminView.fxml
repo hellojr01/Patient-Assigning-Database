@@ -56,12 +56,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label layoutX="507.0" layoutY="378.0" text="3">
+            <Label layoutX="507.0" layoutY="378.0" text="6">
                <font>
                   <Font name="Century" size="40.0" />
                </font>
             </Label>
-            <Label layoutX="851.0" layoutY="378.0" text="8">
+            <Label layoutX="851.0" layoutY="378.0" text="6">
                <font>
                   <Font name="Century" size="40.0" />
                </font>

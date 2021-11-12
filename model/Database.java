@@ -60,25 +60,16 @@ public class Database{
     }
   }
 
-  public static void writeAllData(String tableName, List<List<String>> All){
-    String fileName = tableName + ".csv";
+  public static void writeTxtData(String tableName, String data){
+    String fileName = tableName + ".txt";
     String filePath = "./Database/"+fileName;
     File csvFile = new File(filePath);
     if (csvFile.isFile()) {
         try{
-            FileWriter pw = new FileWriter(filePath);
+            FileWriter pw = new FileWriter(filePath, true);
             System.out.println("Writing " + fileName);
-            for(int i = 0; i < All.size(); i++){
-              for(int j = 0; j < All.get(i).size(); j++){
-                pw.append(All.get(i).get(j));
-                if(j == All.get(i).size() - 1){
-                  pw.append("\n");
-                }
-                else{
-                  pw.append(",");
-                }
-              }
-            }
+            pw.append(data);
+            pw.append('\n');
             pw.flush();
             pw.close();
         }
@@ -86,51 +77,18 @@ public class Database{
           e.printStackTrace();
         }
     }
-  }
-
-  public static void writeUpdate(String tableName, List<String> Entry){
-    String fileName = tableName + "Id" + ".csv";
-    String filePath = "./Database/"+fileName;
-    try{
-          FileWriter pw = new FileWriter(filePath);
-          for(int i = 0; i < Entry.size(); i++){
-                pw.append(Entry.get(i));
-                if(i == Entry.size() - 1){
-                  pw.append("\n");
-                }
-                else{
-                  pw.append(",");
-                }
-          }
-          pw.flush();
-          pw.close();
+    else{
+      try{
+        FileWriter pw = new FileWriter(filePath, true);
+        System.out.println("Writing " + fileName);
+        pw.append(data);
+        pw.append('\n');
+        pw.flush();
+        pw.close();
     }
     catch(Exception e){
-        e.printStackTrace();
+      e.printStackTrace();
     }
-  }
-  
-  public static int readUpdate(String tableName){
-    String fileName = tableName + "Id.csv";
-    String filePath = "./Database/"+fileName;
-    File csvFile = new File(filePath);
-    String row = "";
-    if (csvFile.isFile()) {
-        try{
-            BufferedReader csvReader = new BufferedReader(new FileReader(filePath));
-            row = csvReader.readLine();
-            csvReader.close();
-        }
-        catch(Exception e){
-          e.printStackTrace();
-        }
-    }
-    try{
-        int ans = Integer.parseInt(row);
-        return ans;
-    }
-    catch(NumberFormatException e){
-        return 100;
     }
   }
 
@@ -178,5 +136,22 @@ public class Database{
         }
     }
     return table;
+  }
+
+  public static void copyFileUsingStream(File source, File dest) throws IOException {
+    InputStream is = null;
+    OutputStream os = null;
+    try {
+        is = new FileInputStream(source);
+        os = new FileOutputStream(dest);
+        byte[] buffer = new byte[1024];
+        int length;
+        while ((length = is.read(buffer)) > 0) {
+            os.write(buffer, 0, length);
+        }
+    } finally {
+        is.close();
+        os.close();
+    }
   }
 }
